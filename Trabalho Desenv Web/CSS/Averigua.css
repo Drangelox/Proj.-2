@@ -1,0 +1,40 @@
+.display-show{
+    display: block;
+}
+
+.display-hidden{
+    display: none;
+}
+
+
+.form-hidden{
+    display: none;
+}
+
+/* Configuracao da API */
+
+.tituloAPI{
+    font-size:40px
+}
+
+
+.api-container{
+    align-items: center;
+    justify-content:center;
+}
+.subtitle{
+    margin-bottom: 1rem;
+}
+.b-config{
+    margin-top: 1rem;
+}
+
+#api-resultados{
+    font-family: 'nunito';
+    font-size:25px;
+    align-items:center;
+    justify-content: center;
+    padding: 32px 28px 28px 28px;
+    line-height: 1.5;
+
+}

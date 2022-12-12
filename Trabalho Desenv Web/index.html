@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <title>
+        DISCORD| Seu lugar para Papear e Ficar De Boa
+    </title>
+    <link rel="stylesheet" type="text/css" href="CSS/Disc.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Averigua.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div style="height:100%;overflow-x:hidden">
+            <div class>
+                <div class="grade_menu_header">
+                    <div>
+                        <figure id="logo_disc"></figure>
+                        <img src="Img/Logo.png" width="124" height="34" viewBox="0 0 115 27">
+                        </figure>
+                    </div>
+                    <div class="menu" id="menu_principal">
+                        <div><b>
+                                <h6>Baixar</h6>
+                            </b></div>
+                        <div><b>
+                                <h6>Nitro</h6>
+                            </b></div>
+                        <div><b>
+                                <h6>Segurança</h6>
+                            </b></div>
+                        <div><b>
+                                <h6>Suporte</h6>
+                            </b></div>
+                        <div><b>
+                                <h6>Blog</h6>
+                            </b></div>
+                        <div><b>
+                                <h6>Carreiras</h6>
+                            </b></div>
+                    </div>
+                    <div class="entrar" id="header-controle">
+                            <span id="botao-entrar" class="mostrar-display">Entrar</span>
+                            <span id="botao-sair" class="esconder-display">Sair</span>
+                    </div>
+            </div>
+    </header>
+
+    <main>
+         <!--Alteração para login-->
+         <div class="texto_header">
+            <div class="login_screen display-show" id="averigua-login">
+                <form class ="tela-form" id="login">
+                    <h1>Login</h1>
+                    <br><br>
+                    <div class="form-css">
+                        <input class="e-mail" id="login-averigua" type="text" autofocus placeholder="E-mail" >
+                        <input class="password" id="password-averigua" type="password" autofocus placeholder="Senha">
+                    </div>
+                    <div id="loginErrorMsg" class="errorMsg_config"></div>
+                    <br><br>
+                    <button class="enter_button" type="submit">Entrar</button>
+                    <p style="padding-top: 20px;">
+                        <a href="#" >
+                            Esqueceu sua senha? Clique aqui!
+                        </a>
+                    </p>
+                    <p style="padding-top: 20px;">
+                        <a href="./" id="criarConta-link">
+                            Nao possui conta! Cadastra-se
+                        </a>
+                    </p>
+                </form>
+                <form class="register_screen form-hidden" id="register">
+                    <h1>Cadastro</h1>
+                    <br><br>
+                    <div class="form-css">
+                        <input class="e-mail" id="e-mail-register" type="text" autofocus placeholder="E-mail">
+                        <input class="password" id="password-register" type="password " autofocus placeholder="Senha">
+                        <input class="confirm_password" id="pass-confirm" type="password " autofocus placeholder="Confirme a senha">
+                    </div>
+                    <div id="sucessMsg-cadastro" class="form-input-sucess-message"></div>
+                    <div id="errorMsg-cadastro" class="form-input-error-message"></div>
+                    <br><br>
+                    <button class="register_button" type="submit" >Cadastrar</button>
+                    <p style="padding-top: 5px;">
+                        <a href="./" id="loginPage-link">
+                            Ja possui cadastro? Clique aqui para fazer o login!
+                        </a>
+                    </p>
+                </form>
+            </div>
+            <div class="form display-hidden api-container" id="api">
+                <h1 class="form-title tituloAPI">RapidApi - Search Weather</h1>
+                <p class="subtitle">Digite o nome da cidade:</p>
+                <input id= "pesquisa-api" type="text" class="form-input" autofocus placeholder="Nome da cidade">
+                <button id="pesquisa-api-b" class="form-button b-config" type="submit">Pesquisar</button>
+                <div id ="error" class="text-error-api" ></div>
+            </div>
+            <img src="Img/Discord 2.png" id="disc_2">
+            <div class="display-hidden" id ="resultadosAPI"></div>
+        
+    </main>
+    <script src="Scripts/Controladores.js"></script>
+    <script src="Scripts/Averigua.js"></script>
+    <script src="Scripts/Main.js"></script>
+</body>
+
+</html>
